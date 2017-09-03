@@ -4,3 +4,7 @@ body {
 	font-family: "Work Sans", sans-serif;
 	background-color: rgb(255, 242, 242);
 }
+
+.container {
+	margin-top: 5.25rem;
+}
