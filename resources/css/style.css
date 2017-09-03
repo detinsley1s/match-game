@@ -35,6 +35,10 @@ p {
 	border-radius: 8px;
 }
 
+.card:hover {
+	cursor: pointer;
+}
+
 .card div {
 	color: #fff;
 	font-weight: 900;
