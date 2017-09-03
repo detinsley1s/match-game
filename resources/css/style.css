@@ -8,3 +8,8 @@ body {
 .container {
 	margin-top: 5.25rem;
 }
+
+h1,
+h5 {
+	margin: 0;
+}
