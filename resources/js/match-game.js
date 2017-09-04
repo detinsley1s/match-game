@@ -47,5 +47,8 @@ MatchGame.flipCard = function($card, $game) {
 		$card.text($card.data('value'));
 		$card.data('isFlipped', true);
 		$game.data('flippedCards').push($card);
+		if($game.data('flippedCards').length === 2) {
+
+		}
 	}
 };
