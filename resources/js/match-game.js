@@ -6,6 +6,9 @@ var MatchGame = {};
 // Generates and returns an array of matching card values.
 MatchGame.generateCardValues = function () {
 	let cardValues = [];
+	for(let i = 1; i <= 8; ++i) {
+
+	}
 };
 
 // Converts card values to jQuery card objects and adds them to the supplied game
