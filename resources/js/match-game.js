@@ -24,6 +24,9 @@ MatchGame.generateCardValues = function () {
 // object.
 MatchGame.renderCards = function(cardValues, $game) {
 	$game.empty();
+	cardValues.forEach(cardValue, function(){
+
+	});
 };
 
 // Flips over a given card and checks to see if two cards are flipped over.
