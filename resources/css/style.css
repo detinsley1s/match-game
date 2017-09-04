@@ -33,16 +33,13 @@ p {
 	background-color: rgb(32, 64, 86);
 	border: 4px solid #fff;
 	border-radius: 8px;
-}
-
-.card:hover {
-	cursor: pointer;
-}
-
-.card div {
 	color: #fff;
 	font-weight: 900;
 	font-size: 7rem;
 	text-align: center;
-	margin-top: 10px;
+	padding-top: 10px;
+}
+
+.card:hover {
+	cursor: pointer;
 }
