@@ -43,6 +43,8 @@ MatchGame.renderCards = function(cardValues, $game) {
 // Updates styles on flipped cards depending whether they are a match or not.
 MatchGame.flipCard = function($card, $game) {
 	if(!$card.data("isFlipped")) {
-
+		$card.css('background-color', $card.data('color'));
+		$card.text($card.data('value'));
+		$card.data('isFlipped', true);
 	}
 };
