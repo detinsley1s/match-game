@@ -11,6 +11,9 @@ MatchGame.generateCardValues = function () {
 		cardValues.push(i);
 	}
 	let randomCardValues = [];
+	while(cardValues.length > 0) {
+
+	}
 };
 
 // Converts card values to jQuery card objects and adds them to the supplied game
