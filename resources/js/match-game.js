@@ -23,6 +23,7 @@ MatchGame.generateCardValues = function () {
 // Converts card values to jQuery card objects and adds them to the supplied game
 // object.
 MatchGame.renderCards = function(cardValues, $game) {
+	let colors = ['hsl(25, 85%, 65%)', 'hsl(55, 85%, 65%)', 'hsl(90, 85%, 65%)', 'hsl(160, 85%, 65%)', 'hsl(220, 85%, 65%)', 'hsl(265, 85%, 65%)', 'hsl(310, 85%, 65%)', 'hsl(360, 85%, 65%)'];
 	$game.empty();
 	cardValues.forEach(cardValue, function(){
 		let $card = '<div class="card col-xs-3"></div>';
