@@ -37,6 +37,9 @@ MatchGame.renderCards = function(cardValues, $game) {
 		$card.data('color', colors[cardValue - 1]);
 		$game.append($card);
 	});
+	$('.card').click(function() {
+		MatchGame.flipCard($(this), $game);
+	});
 };
 
 // Flips over a given card and checks to see if two cards are flipped over.
