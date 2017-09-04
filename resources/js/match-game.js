@@ -14,6 +14,7 @@ MatchGame.generateCardValues = function () {
 	while(cardValues.length > 0) {
 		let randomIdx = Math.floor(Math.random() * cardValues.length);
 		randomCardValues.push(cardValues[randomIdx]);
+		cardValues.splice(randomIdx, 1);
 	}
 };
 
