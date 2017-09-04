@@ -25,7 +25,8 @@ MatchGame.generateCardValues = function () {
 MatchGame.renderCards = function(cardValues, $game) {
 	$game.empty();
 	cardValues.forEach(cardValue, function(){
-		let card = '<div class="card col-xs-3"></div>';
+		let $card = '<div class="card col-xs-3"></div>';
+		$card.data('value', cardValue);
 	});
 };
 
