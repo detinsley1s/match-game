@@ -2,7 +2,7 @@ var MatchGame = {};
 
 // Sets up a new game after HTML document has loaded.
 $(function() {
-	MatchGame.renderCards(MatchGame.generateCardValues(), $("#body"));
+	MatchGame.renderCards(MatchGame.generateCardValues(), $("#game"));
 });
 
 // Renders a 4x4 board of cards.
