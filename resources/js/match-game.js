@@ -23,7 +23,7 @@ MatchGame.generateCardValues = function () {
 // Converts card values to jQuery card objects and adds them to the supplied game
 // object.
 MatchGame.renderCards = function(cardValues, $game) {
-
+	$game.empty();
 };
 
 // Flips over a given card and checks to see if two cards are flipped over.
