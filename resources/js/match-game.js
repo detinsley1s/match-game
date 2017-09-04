@@ -29,6 +29,7 @@ MatchGame.renderCards = function(cardValues, $game) {
 		let $card = '<div class="card col-xs-3"></div>';
 		$card.data('value', cardValue);
 		$card.data('isFlipped', false);
+		$card.data('color', colors[cardValue - 1]);
 	});
 };
 
