@@ -50,21 +50,23 @@ MatchGame.flipCard = function($card, $game) {
 		$card.text($card.data('value'));
 		$card.data('isFlipped', true);
 		$game.data('flippedCards').push($card);
-		if($game.data('flippedCards').length === 2) {
-			if($game.data('flippedCards')[0].data('value') === $game.data('flippedCards')[1].data('value')) {
-				$game.data('flippedCards').forEach(function(card) {
-					card.css('color', 'rgb(204, 204, 204)');
-					card.css('background-color', 'rgb(153, 153, 153)');
-				});
+		setTimeout(function() {
+			if($game.data('flippedCards').length === 2) {
+				if($game.data('flippedCards')[0].data('value') === $game.data('flippedCards')[1].data('value')) {
+					$game.data('flippedCards').forEach(function(card) {
+						card.css('color', 'rgb(204, 204, 204)');
+						card.css('background-color', 'rgb(153, 153, 153)');
+					});
+				}
+				else {
+					$game.data('flippedCards').forEach(function(card) {
+						card.css('background-color', 'rgb(32, 64, 86)');
+						card.text('');
+						card.data('isFlipped', false);
+					});
+				}
+				$game.data('flippedCards', []);
 			}
-			else {
-				$game.data('flippedCards').forEach(function(card) {
-					card.css('background-color', 'rgb(32, 64, 86)');
-					card.text('');
-					card.data('isFlipped', false);
-				});
-			}
-			$game.data('flippedCards', []);
-		}
+		}, 1000);
 	}
 };
