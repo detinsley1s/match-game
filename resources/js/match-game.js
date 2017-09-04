@@ -61,6 +61,7 @@ MatchGame.flipCard = function($card, $game) {
 					card.data('isFlipped', false);
 				});
 			}
+			$game.data('flippedCards', []);
 		}
 	}
 };
