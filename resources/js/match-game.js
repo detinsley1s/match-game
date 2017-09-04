@@ -48,7 +48,12 @@ MatchGame.flipCard = function($card, $game) {
 		$card.data('isFlipped', true);
 		$game.data('flippedCards').push($card);
 		if($game.data('flippedCards').length === 2) {
-
+			if($game.data('flippedCards')[0].data('value') === $game.data('flippedCards')[1].data('value')) {
+				$game.data('flippedCards')[0].css('color', 'rgb(204, 204, 204)');
+				$game.data('flippedCards')[0].css('background-color', 'rgb(153, 153, 153)');
+				$game.data('flippedCards')[1].css('color', 'rgb(204, 204, 204)');
+				$game.data('flippedCards')[1].css('background-color', 'rgb(153, 153, 153)');
+			}
 		}
 	}
 };
